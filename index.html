@@ -1,0 +1,77 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Register-Form</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="choice">
+            <div id="register-title" onclick="change_login_regis('register')">Đăng ký</div>
+            <div id="login-title" onclick="change_login_regis('login')">Đăng nhập</div>
+        </div>
+        <div id="register-show" class="form-register">
+            <h1>Đăng ký thành viên</h1>
+            <hr>
+            <div class="label-register">
+                <span>Tên đăng nhập</span> <br>
+                <span>Mật khẩu</span> <br>
+                <span>Email</span> <br>
+                <span>Chuyên môn</span> <br>
+                <span>Tuổi(18-40)</span> <br>
+                <span>Giới tính</span> <br>
+            </div>
+            <form class="form-left" action="https://www.youtube.com/" name="form1" onsubmit="return check_blank('name') 
+                                                                && check_blank('password') 
+                                                                && check_blank('email')
+                                                                && check_blank('ages')
+                                                                && check_name_max30()
+                                                                && check_ages_18and40()
+                                                                && check_email()">
+                <input class="form-detail" type="text" name="name" id="name" onblur="check_blank('name')"> <br>
+                <p class="anoun" id="namep"></p>
+                <input class="form-detail" type="password" name="password" id="password" onblur="check_blank('password')"> <br>
+                <p class="anoun" id="passwordp"></p>
+                <input class="form-detail" type="text" name="email" id="email" onblur="check_blank('email')"> <br>
+                <p class="anoun" id="emailp"></p>
+                <select class="form-detail" name="jobs" id="jobs">
+                    <option value="FE Developer">FE Developer</option>
+                    <option value="BE Developer">BE Developer</option>
+                    <option value="Full-Stack Developer">Full-Stack Developer</option>
+                    <option value="Tester">Tester</option>
+                </select> <br>
+                <input class="form-detail" type="text" name="ages" id="ages" onblur="check_blank('ages')"> <br>
+                <p class="anoun" id="agesp"></p>
+                <input class="form-detail radio-button" value="men" type="radio" name="sex" checked=""> Nam
+                <input class="form-detail radio-button" value="women" type="radio" name="sex"> Nữ
+                <br>
+                <input class="form-detail submit-button" type="submit" value="Đăng ký">
+            </form>
+            <hr>
+            <p style="text-align: center; margin-top: 5px;">Bạn đã có tài khoản? <span class="link-change" onclick="change_login_regis('login')">Đăng nhập</span></p>
+        </div>
+        <div id="login-show" class="form-login">
+            <h1>Đăng nhập</h1>
+            <hr>
+            <div class="label-register">
+                <span>Tên đăng nhập</span> <br>
+                <span>Mật khẩu</span> <br>
+            </div>
+            <form class="form-left" action="https://www.facebook.com/" name="form2" onsubmit="return check_blank('name-login') 
+                                                                && check_blank('password-login') 
+                                                                && check_name_login_max30()">
+                <input class="form-detail" type="text" name="name" id="name-login" onblur="check_blank('name-login')"> <br>
+                <p class="anoun" id="name-loginp"></p>
+                <input class="form-detail" type="password" name="password" id="password-login" onblur="check_blank('password-login')"> <br>
+                <p class="anoun" id="password-loginp"></p>
+                <input type="checkbox" id="checkbox"> Ghi nhớ mật khẩu <br>
+                <input class="form-detail submit-button button-login" type="submit" value="Đăng nhập">
+            </form>
+            <hr>
+            <p style="text-align: center; margin-top: 5px;">Bạn chưa có tài khoản? <span class="link-change" onclick="change_login_regis('register')">Đăng ký ngay</span></p>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</html>

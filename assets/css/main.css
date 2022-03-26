@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 470px;
+    width: 424px;
+    margin: auto;
+    background-color: yellowgreen;
+    border: solid 2px rgb(202, 205, 50);
+    border-radius: 15px;
+}
+
+.choice {
+    width: 100%;
+    height: 48px;
+}
+
+.choice > div {
+    border-radius: 10px;
+    float: left;
+    height: 48px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 48px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#register-title {
+    background-color: rgb(202, 205, 50);
+    cursor: pointer;
+}
+
+#login-title {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.form-register{
+    display: block;
+}
+
+.form-login {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.label-register {
+    float: left;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.label-register > span {
+    line-height: 49.5px;
+}
+
+.form-left {
+    float: left;
+    width: 50%;
+}
+.form-detail {
+    margin: 15px;
+}
+
+.anoun {
+    color: red;
+    margin-left: 16px;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.submit-button {
+    height: 32px;
+    width: 70px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-left: -10px;
+}
+
+.link-change {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+hr {
+    width: 100%;
+}
+
+/* Đăng nhập */
+#checkbox {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.button-login {
+    margin-top: 48px;
+}
