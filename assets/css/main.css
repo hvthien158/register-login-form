@@ -41,11 +41,11 @@
 }
 
 .form-register{
-    display: block;
+    display: none;
 }
 
 .form-login {
-    display: none;
+    display: block;
 }
 
 h1 {
@@ -101,5 +101,17 @@ hr {
 }
 
 .button-login {
-    margin-top: 48px;
+    margin-top: 16px;
+}
+
+.password-forget {
+    margin-top: 32px;
+    margin-left: -28px;
+    color: blue;
+    cursor: pointer;
+}
+
+.password-forget:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }
