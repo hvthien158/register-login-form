@@ -41,11 +41,11 @@
 }
 
 .form-register{
-    display: none;
+    display: block;
 }
 
 .form-login {
-    display: block;
+    display: none;
 }
 
 h1 {
