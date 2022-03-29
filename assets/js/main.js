@@ -5,14 +5,18 @@ function change_login_regis(id){
     var login_title = document.getElementById('login-title');
     if(id == 'register'){
         register.style.display = 'block';
-        register_title.style.backgroundColor = 'rgb(202, 205, 50)';
+        register_title.style.backgroundColor = '#6576EA';
+        register_title.style.color = 'black';
         login.style.display = 'none';
-        login_title.style.backgroundColor = 'yellowgreen';
+        login_title.style.backgroundColor = 'black';
+        login_title.style.color = 'white';
     } else if(id == 'login') {
         register.style.display = 'none';
-        register_title.style.backgroundColor = 'yellowgreen';
+        register_title.style.backgroundColor = 'black';
+        register_title.style.color = 'white';
         login.style.display = 'block';
-        login_title.style.backgroundColor = 'rgb(202, 205, 50)';
+        login_title.style.backgroundColor = '#6576EA';
+        login_title.style.color = 'black';
     }
 }
 

@@ -44,13 +44,13 @@
                 </select> <br>
                 <input class="form-detail" type="text" name="ages" id="ages" onblur="check_blank('ages')"> <br>
                 <p class="anoun" id="agesp"></p>
-                <input class="form-detail radio-button" value="men" type="radio" name="sex" checked=""> Nam
-                <input class="form-detail radio-button" value="women" type="radio" name="sex"> Nữ
+                <input class="form-detail radio-button" value="men" type="radio" name="sex" checked=""> <span style="color: aliceblue;">Nam</span>
+                <input class="form-detail radio-button" value="women" type="radio" name="sex"> <span style="color: aliceblue;">Nữ</span>
                 <br>
                 <input class="form-detail submit-button" type="submit" value="Đăng ký">
             </form>
             <hr>
-            <p style="text-align: center; margin-top: 5px;">Bạn đã có tài khoản? <span class="link-change" onclick="change_login_regis('login')">Đăng nhập</span></p>
+            <p style="text-align: center; margin-top: 5px;"><span style="color: aliceblue;">Bạn đã có tài khoản?</span><span class="link-change" onclick="change_login_regis('login')">Đăng nhập</span></p>
         </div>
         <div id="login-show" class="form-login">
             <h1>Đăng nhập</h1>
@@ -66,12 +66,12 @@
                 <p class="anoun" id="name-loginp"></p>
                 <input class="form-detail" type="password" name="password" id="password-login" onblur="check_blank('password-login')"> <br>
                 <p class="anoun" id="password-loginp"></p>
-                <input type="checkbox" id="checkbox"> Ghi nhớ mật khẩu <br>
+                <input type="checkbox" id="checkbox"> <span style="color: aliceblue;">Ghi nhớ mật khẩu</span> <br>
                 <div  class="password-forget"><a>Quên mật khẩu?</a></div>
                 <input class="form-detail submit-button button-login" type="submit" value="Đăng nhập">
             </form>
             <hr>
-            <p style="text-align: center; margin-top: 5px;">Bạn chưa có tài khoản? <span class="link-change" onclick="change_login_regis('register')">Đăng ký ngay</span></p>
+            <p style="text-align: center; margin-top: 5px;"><span style="color: aliceblue;">Bạn chưa có tài khoản</span> <span class="link-change" onclick="change_login_regis('register')">Đăng ký ngay</span></p>
         </div>
     </div>
     <script src="./assets/js/main.js"></script>
